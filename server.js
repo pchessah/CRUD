@@ -5,7 +5,7 @@ const router = require("./routes/index");
 
 const app = express();
 const PORT = 3001;
-const MONGODB_URI = "mongodb://localhost:27017/articles";
+const MONGODB_URI = "mongodb+srv://pchessah:0706165412th@easeria-pw3gd.mongodb.net/test?retryWrites=true&w=majority";
 
 app.use(cors());
 app.use(express.urlencoded({ extended: true }));
@@ -33,4 +33,4 @@ app.listen(PORT, function() {
   console.log(`server listening on port ${PORT}`);
 });
 
-//mongodb+srv://pchessah:<password>@easeria-pw3gd.mongodb.net/test?retryWrites=true&w=majority
+
